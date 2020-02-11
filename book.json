@@ -1,0 +1,18 @@
+{
+    "title": "길섶교회 공식기록",
+    "links": {
+        "sidebar": {
+            "길섶교회 홈페이지 바로가기": "//roadsidechurch.kr"
+        }
+    },
+    "gitbook": "3.x.x",
+    "styles": {
+        "website": "styles/website.css"
+    },
+    "plugins": [
+        "collapsible-chapters"
+    ],
+    "pluginsConfig": {
+        "collapsible-chapters": {}
+    }
+}
