@@ -4,10 +4,10 @@ bookDIR="_book"
 
 [ -d $buildDIR ] && rm -rf $buildDIR;
 git clone git@github.com:roadsidechurch-kr/book.git --branch gitbook $buildDIR
-rsync -ah ./pages/ ./$buildDIR/ --delete;
-git add *
+rsync -ah ./pages/ ./$buildDIR/ --delete --exclude .git;
+git add .
 git commit  -m "update"
-git push
+git push;
 
 cd ./$buildDIR
 
@@ -15,8 +15,9 @@ git clone git@github.com:roadsidechurch-kr/book.git --branch gh-pages $bookDIR
 gitbook install && gitbook build
 
 cd ./$bookDIR
-git add *
+git init
+git add .
 git commit -m "update"
-git push
+git push --force git@github.com:roadsidechurch-kr/book.git master:gh-pages
 
 cd $rootPWD;
