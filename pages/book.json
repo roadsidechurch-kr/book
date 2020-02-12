@@ -11,10 +11,15 @@
     },
     "plugins": [
         "include",
+        "anchor-navigation-ex",
         "collapsible-chapters",
         "hide-published-with"
     ],
     "pluginsConfig": {
-        "collapsible-chapters": {}
+        "collapsible-chapters": {},
+        "anchor-navigation-ex": {
+            "showLevel": false,
+            "associatedWithSummary": false
+        }
     }
 }

@@ -1,3 +1,5 @@
+#!/bin/bash
+
 rootPWD="$(pwd)"
 buildDIR="build"
 bookDIR="_book"
