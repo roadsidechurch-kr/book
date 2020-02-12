@@ -13,7 +13,7 @@ git add .
 git commit  -m "update"
 git push;
 
-git clone git@github.com:roadsidechurch-kr/book.git --branch gh-pages $bookDIR
+[ -d $bookDIR ] && rm -rf $bookDIR;
 gitbook install && gitbook build
 
 cd ./$bookDIR
