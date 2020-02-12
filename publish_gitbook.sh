@@ -1,7 +1,7 @@
 rootPWD="$(PWD)"
 
 [ -d build ] || mkdir build;
-cp -r ./pages/* ./build/;
+rsync -ah ./pages/ ./build/ --delete;
 
 cd ./build
 
