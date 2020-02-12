@@ -10,6 +10,7 @@
         "website": "styles/website.css"
     },
     "plugins": [
+        "include",
         "collapsible-chapters",
         "hide-published-with"
     ],
