@@ -1,8 +1,22 @@
-gitbook install pages && gitbook build pages
+rootPWD="$(PWD)"
 
-cd ./pages/_book
+[ -d build ] || mkdir build;
+cp -r ./pages/* ./build/;
+
+cd ./build
+
+git init
+git add *
+git commit  -m "update"
+git push --force git@github.com:roadsidechurch-kr/book.git master:gitbook
+
+gitbook install && gitbook build
+
+cd ./_book
 git init
 git add *
 git commit -m "update"
 
 git push --force git@github.com:roadsidechurch-kr/book.git master:gh-pages
+
+cd $rootPWD;

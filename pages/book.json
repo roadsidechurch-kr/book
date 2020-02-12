@@ -10,9 +10,14 @@
         "website": "styles/website.css"
     },
     "plugins": [
-        "collapsible-chapters"
+        "collapsible-chapters",
+        "download-pdf-link"
     ],
     "pluginsConfig": {
-        "collapsible-chapters": {}
+        "collapsible-chapters": {},
+        "download-pdf-link": {
+            "base": "https://www.gitbook.com/book/roadsidechurch-kr/book/",
+            "label": "PDF 다운로드"
+        }
     }
 }
