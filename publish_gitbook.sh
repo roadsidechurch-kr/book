@@ -1,4 +1,4 @@
-rootPWD="$(PWD)"
+rootPWD="$(pwd)"
 buildDIR="build"
 bookDIR="_book"
 
